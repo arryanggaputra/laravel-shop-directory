@@ -10,15 +10,15 @@ This project attempts to provide an example of how to use the very popular front
 #### Front End
 - [x] Support InertiaJS with React TypeScript
 - [x] React TypeScript Code Splitting
-- [] Remove unused Tailwind class
-- [] Pagination
+- [ ] Remove unused Tailwind class
+- [ ] Pagination
 
 #### Back End
-- [] Adding phone number in tenants table
-- [] Shared data type between TypeScript and PHP
-- [] Pagination Support
-- [] Filter Support
-- [] Deploy to Vercel
+- [ ] Adding phone number in tenants table
+- [ ] Shared data type between TypeScript and PHP
+- [ ] Pagination Support
+- [ ] Filter Support
+- [ ] Deploy to Vercel
 
 
 ## Contributing
