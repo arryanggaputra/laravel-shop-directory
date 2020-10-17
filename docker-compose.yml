@@ -71,6 +71,16 @@ services:
     working_dir: /var/www/html
     entrypoint: ["npm"]
 
+  yarn:
+    build:
+      context: .
+      dockerfile: yarn.dockerfile
+    container_name: yarn
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["yarn"]
+
   artisan:
     build:
       context: .
