@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Floor;
 use Illuminate\Support\ServiceProvider;
+use Inertia\Inertia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Multiple values
+        Inertia::share([
+            // Lazily
+            'floorLists' => function () {
+                return Floor::all();
+            },
+        ]);
     }
 }
