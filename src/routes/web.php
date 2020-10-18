@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FloorController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,4 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/shop', [HomeController::class, 'shop']);
+Route::get('/floor/{floor}', [FloorController::class, 'show']);
