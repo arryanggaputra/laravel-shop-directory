@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "artisan": "docker-compose run --rm artisan"
+    "up": "docker-compose up -d --build site",
+    "artisan": "docker-compose run --rm artisan",
+    "npm": "docker-compose run --rm npm",
+    "yarn": "docker-compose run --rm yarn",
+    "php": "docker-compose run --rm php"
   },
   "author": "arryanggaputra@gmail.com",
   "license": "ISC",
