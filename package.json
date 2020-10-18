@@ -1,0 +1,14 @@
+{
+  "name": "shop-directory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "artisan": "docker-compose run --rm artisan"
+  },
+  "author": "arryanggaputra@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0"
+  }
+}
