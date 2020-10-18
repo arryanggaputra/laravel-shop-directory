@@ -31,6 +31,12 @@ mix.ts("resources/js/app.tsx", "public/js")
             ]
         },
         resolve: {
+            alias: {
+                components: path.resolve(
+                    __dirname,
+                    "resources/js/src/components"
+                )
+            },
             extensions: ["*", ".js", ".jsx", ".vue", ".ts", ".tsx"]
         }
     });
