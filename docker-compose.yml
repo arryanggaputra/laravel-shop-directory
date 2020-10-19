@@ -61,7 +61,7 @@ services:
     user: laravel
     networks:
       - laravel
-    entrypoint: ["composer", "--ignore-platform-reqs"]
+    entrypoint: ["composer"]
 
   npm:
     image: node:13.7
